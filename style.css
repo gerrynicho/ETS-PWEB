@@ -1,0 +1,155 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.NavBar {
+    width: 100vw;
+    background-color: navy;
+    height: 13vh;
+    color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.NavBar .Title {
+    margin-left: 30px;
+    font-size: 1.5em;
+    user-select: none;
+}
+
+.NavBar .Menu {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    user-select: none;
+}
+
+.NavBar .Menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.NavBar .Menu a:hover {
+    color: lightseagreen;
+}
+
+.Content {
+    padding-top: 13vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.center-content {
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 13vh);
+}
+
+.top-content {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.BlogWrapper {
+    width: 75%;
+    height: fit-content;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.BlogTitle {
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.BlogContent {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.BlogImage {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.blog-action-form {
+    margin-bottom: 10px;
+}
+
+.blog-action-form button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.blog-action-form button:hover {
+    background-color: lightseagreen;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+input[type="text"], input[type="password"], textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 100px;
+    min-width: 200px;
+    max-width: 1000px;
+    max-height: 250px;
+}
+
+button {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightseagreen;
+}
